@@ -15,7 +15,7 @@
 for (let i = 1; i <=100; i++) {
     //  console.log (i);
      if (i % 3 == 0) {
-         i = fizz;
+         i = 'fizz';
      };
 
      if (i % 5 == 0) {
