@@ -14,19 +14,17 @@
 
 
 for (let i = 1; i <=100; i++) {
-    //  console.log (i);
      if (i % 3 == 0) {
-        let fizz = i % 3 == 0;
-        console.log (fizz + 'Fizz');
-     };
+        console.log('fizz')
+     }
+      else if (i % 5 == 0) {
+         console.log('Buzz');
+      }
+      else if (i % 15 == 0) {
+         console.log('fizzbuzz');
+      } else {
+        console.log(i);
+      }
 
-    // if (i % 5 == 0) {
-    //     console.log (i + 'Buzz');
-    // };
-
-    // if (i % 15 == 0) {
-    //      console.log (i + 'FizzBuzz')
-    // };
-
-     console.log(i);
+    
 };
