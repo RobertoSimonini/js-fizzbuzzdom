@@ -15,16 +15,16 @@
 for (let i = 1; i <=100; i++) {
     //  console.log (i);
      if (i % 3 == 0) {
-         i = 'fizz';
+        console.log (i + 'Fizz');
      };
 
-     if (i % 5 == 0) {
-         i = 'Buzz';
-     };
+    //  if (i % 5 == 0) {
+    //      i = 'Buzz';
+    //  };
 
-     if (i % 15 == 0) {
-         i = 'FizzBuzz';
-     };
+    //  if (i % 15 == 0) {
+    //      i = 'FizzBuzz';
+    //  };
 
      console.log(i);
 };
