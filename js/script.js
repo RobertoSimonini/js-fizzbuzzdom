@@ -9,22 +9,38 @@
 ? Abbiamo visto qualcosa di particolare che possiamo usare?
 */
 
+
+/* // ! BONUS 
+
+TODO 1. Crea un elemento che faccia da contenitore nel DOM e poi riempilo con i tuoi elementi via JS.
+Puoi usare varie tecniche  (template literals, innerHTML, appendecc)
+
+TODO 2. Applica stili differenti agli elementi aggiunti al DOM nel BONUS 1, a seconda che il valore inserito sia un numero, un fizz, un buzz o un fizzbuzz.
+Come abbiamo visto puoi  usare varie tecniche (style , className, classList)
+*/
+
 //---------------------------------------------------------------//
 
-
+const targetElement = document.getElementById('target');
+let content = '';
+const fizzBuzz = 'FizzBuzz';
+const Fizz = 'Fizz';
+const Buzz = 'Buzz';
 
 for (let i = 1; i <=100; i++) {
      if (i % 15 == 0) {
-        console.log('FizzBuzz')
+        console.log(fizzBuzz);
      }
       else if (i % 5 == 0) {
-         console.log('Buzz');
+         console.log(Buzz);
       }
        else if (i % 3 == 0) {
-         console.log('fizz');
+         console.log(Fizz);
       } else {
-        console.log(i);
+         console.log(i);
       }
 
-    
+      
 };
+
+// targetElement.innertext = content;
