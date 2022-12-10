@@ -1,0 +1,57 @@
+/* Css reset  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Generics  */
+
+body {
+    background-color: #083B4C;
+    padding-bottom: 50px;
+}
+
+.container {
+    max-width: 75%;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #fff;
+    font-size: 50px;
+    text-align: center;
+    padding: 50px;
+}
+
+/* Utils  */
+
+.d-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+#target li {
+    flex-basis: calc(100% / 7);
+    list-style-type: none;
+    padding: 1rem;
+    background-color: aqua;
+    cursor: pointer;
+    transition: transform 0.5s;
+    text-align: center;
+    height: 225px;
+}
+
+#target li:hover {
+    transform: scale(1.05);
+    filter: brightness(1.25);
+}
