@@ -23,20 +23,20 @@ Come abbiamo visto puoi  usare varie tecniche (style , className, classList)
 
 let targetElement = document.getElementById('target');
 let content = '';
-let fizzBuzz = 'FizzBuzz';
-let fizz = 'Fizz';
-let buzz = 'buzz';
+const fizzBuzz = 'FizzBuzz';
+const fizz = 'Fizz';
+const buzz = 'buzz';
 let ciao = document.getElementById('ciao');
 
 for (let i = 1; i <=100; i++) {
      if (i % 15 === 0) {
-         targetElement.innerHTML += `<li>${'FizzBuzz'}</li>`;
+         targetElement.innerHTML += `<li>${fizzBuzz}</li>`;
      }
       else if (i % 5 == 0) {
-         targetElement.innerHTML += `<li>${'Buzz'}</li>`;
+         targetElement.innerHTML += `<li>${buzz}</li>`;
      }
       else if (i % 3 == 0) {
-         targetElement.innerHTML += `<li>${'Fizz'}</li>`;
+         targetElement.innerHTML += `<li>${fizz}</li>`;
       } else {
          targetElement.innerHTML += `<li>${i}</li>`;
       }      
