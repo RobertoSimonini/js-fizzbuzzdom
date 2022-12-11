@@ -40,18 +40,38 @@ h1 {
     gap: 25px;
 }
 
-#target li {
-    flex-basis: calc(100% / 7);
+#target li, #test li {
     list-style-type: none;
     padding: 1rem;
-    background-color: aqua;
+    /* background-color: aqua; */
     cursor: pointer;
     transition: transform 0.5s;
-    text-align: center;
     height: 225px;
+    
+    flex-basis: calc(100% / 7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #target li:hover {
     transform: scale(1.05);
     filter: brightness(1.25);
+}
+
+/* Colors  */
+.bg-green {
+    background-color: #0CD6A1;
+}
+
+.bg-fuchsia {
+    background-color: #F0466F;
+}
+
+.bg-blue {
+    background-color: #1389B2;
+}
+
+.bg-orange {
+    background-color: #FFD166;
 }

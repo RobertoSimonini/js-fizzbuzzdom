@@ -26,20 +26,22 @@ let content = '';
 const fizzBuzz = 'FizzBuzz';
 const fizz = 'Fizz';
 const buzz = 'buzz';
-let ciao = document.getElementById('ciao');
+
+
 
 for (let i = 1; i <=100; i++) {
-     if (i % 15 === 0) {
-         targetElement.innerHTML += `<li>${fizzBuzz}</li>`;
-     }
-      else if (i % 5 == 0) {
-         targetElement.innerHTML += `<li>${buzz}</li>`;
-     }
-      else if (i % 3 == 0) {
-         targetElement.innerHTML += `<li>${fizz}</li>`;
-      } else {
-         targetElement.innerHTML += `<li>${i}</li>`;
-      }      
-   };
-   
+   if (i % 15 === 0) {
+      targetElement.innerHTML += `<li class="bg-fuchsia"> ${fizzBuzz}</li>`;
+      
+   }
+   else if (i % 5 == 0) {
+      targetElement.innerHTML += `<li class="bg-orange">${buzz}</li>`;
+   }
+   else if (i % 3 == 0) {
+      targetElement.innerHTML += `<li class="bg-green"> ${fizz}</li>`;
+   } else {
+      targetElement.innerHTML += `<li class="bg-blue"> ${i}</li>`;
+   }  
+};
 
+  
